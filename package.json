@@ -1,0 +1,37 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "now-build": "next build && yarn db:migrate",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": "knex migrate:rollback"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "apollo-server-micro": "^2.13.1",
+    "classnames": "^2.2.6",
+    "dataloader": "^2.0.0",
+    "date-fns": "^2.13.0",
+    "gray-matter": "^4.0.2",
+    "knex": "^0.21.1",
+    "micro-cors": "^0.1.1",
+    "mysql": "^2.18.1",
+    "next": "9.3.5",
+    "postcss-preset-env": "^6.7.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.2",
+    "sass": "^1.26.5",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "@types/react": "^16.9.35",
+    "typescript": "^3.9.2"
+  }
+}
